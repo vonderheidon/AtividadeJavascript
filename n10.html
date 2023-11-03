@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício número 10</title>
+</head>
+<body>
+    <h1>Exercício número 10</h1>
+    <div id="resultado">
+        <p>0</p>
+    </div>
+    <button onclick="somar()">Somar</button>
+    <script>
+        function somar() {
+            let num1 = Number(prompt("Digite o primeiro numero: "))
+            let num2 = Number(prompt("Digite o segundo numero: "))
+            let resultado = document.getElementById('resultado')
+            resultado.innerHTML = `<p>${num1 + num2}</p>`
+        }
+    </script>
+</body>
+</html>
